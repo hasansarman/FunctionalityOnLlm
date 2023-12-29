@@ -16,6 +16,7 @@ from functionary.openai_types import (ChatCompletion, ChatCompletionChunk,
                                       ChatInput, Choice, StreamChoice)
 
 app = FastAPI(title="Functionary API")
+#python3 server_vllm.py --model "meetkai/functionary-7b-v2.1" --host 0.0.0.0
 
 
 @app.post("/v1/chat/completions")

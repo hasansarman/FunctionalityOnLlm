@@ -5,6 +5,7 @@ import asyncio
 openai.api_key = "functionary" # We just need to set this something other than None
 os.environ['OPENAI_API_KEY'] = "functionary" # chatlab requires us to set this too
 openai.api_base = "http://localhost:18000/v1"
+#python3 server_vllm.py --model "meetkai/functionary-7b-v2.1" --host 0.0.0.0
 
 # now provide the function with description
 def get_car_price(car_name: str):
